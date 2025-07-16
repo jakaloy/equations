@@ -19,7 +19,7 @@ enterBtn.addEventListener('click', () => {
     }
     else if (constant === 0 || isNaN(constant)){
         constant = (size - barrelID)/(grooveOD - barrelID);
-        resultDiv.textContent = size.toFixed(7);
+        resultDiv.textContent = constant.toFixed(7);
     }
 });
 
