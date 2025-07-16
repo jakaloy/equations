@@ -14,10 +14,12 @@ enterBtn.addEventListener('click', () => {
     clearBtn.classList.remove('displaynone');
 
     if (size === 0 || isNaN(size)){
-        console.log('if true');
         size = barrelID + ((grooveOD - barrelID) * constant);
         resultDiv.textContent = size.toFixed(5);
     }
+    else if (constant === 0 || isNaN(constant){
+        constant = (size - barrelID)/(grooveOD - barrelID);
+        resultDiv.textContent = size.toFixed(7);
 });
 
 clearBtn.addEventListener('click', () => {
