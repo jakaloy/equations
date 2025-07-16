@@ -27,3 +27,27 @@ clearBtn.addEventListener('click', () => {
     resultDiv.textContent = '';
     clearBtn.classList.add('displaynone');
 });
+
+sizeInpt.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter'){
+        enterBtn.click();
+    }
+});
+
+barrelInpt.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter'){
+        enterBtn.click();
+    }
+});
+
+grooveInpt.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter'){
+        enterBtn.click();
+    }
+});
+
+constInpt.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter'){
+        enterBtn.click();
+    }
+});
