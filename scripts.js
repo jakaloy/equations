@@ -17,9 +17,10 @@ enterBtn.addEventListener('click', () => {
         size = barrelID + ((grooveOD - barrelID) * constant);
         resultDiv.textContent = size.toFixed(5);
     }
-    else if (constant === 0 || isNaN(constant){
+    else if (constant === 0 || isNaN(constant)){
         constant = (size - barrelID)/(grooveOD - barrelID);
         resultDiv.textContent = size.toFixed(7);
+    }
 });
 
 clearBtn.addEventListener('click', () => {
