@@ -1,0 +1,29 @@
+const sizeInpt = document.getElementById('buttonSize');
+const barrelInpt = document.getElementById('barrelID');
+const grooveInpt = document.getElementById('grooveOD');
+const constInpt = document.getElementById('C');
+const enterBtn = document.getElementById('enter');
+const resultDiv = document.getElementById('result');
+const clearBtn = document.getElementById('clear');
+
+enterBtn.addEventListener('click', () => {
+    let size = parseFloat(sizeInpt.value);
+    let barrelID = parseFloat(barrelInpt.value);
+    let grooveOD = parseFloat(grooveInpt.value);
+    let constant = parseFloat(constInpt.value);
+    clearBtn.classList.remove('displaynone');
+
+    if (size === 0 || isNaN(size)){
+        console.log('if true');
+        size = barrelID + ((grooveOD - barrelID) * constant);
+        resultDiv.textContent = size.toFixed(5);
+    }
+});
+
+clearBtn.addEventListener('click', () => {
+    sizeInpt.value = '';
+    barrelInpt.value = '';
+    grooveInpt.value = '';
+    resultDiv.textContent = '';
+    clearBtn.classList.add('displaynone');
+});

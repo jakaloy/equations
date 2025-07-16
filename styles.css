@@ -1,0 +1,19 @@
+.equationwrapper{
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+}
+input{
+    width:8rem;
+    text-align:right;
+}
+button{
+    width:8.5rem;
+}
+#result{
+    width:8.5rem;
+    text-align:right;
+}
+.displaynone{
+    display:none;
+}
